@@ -53,12 +53,12 @@ async function askQuestion() {
         {
             type: "number",
             name: "num1",
-            message: "Enter Number 1:"
+            message: "Enter Number 1: ",
         },
         {
             type: "number",
             name: "num2",
-            message: "Enter Number 2:"
+            message: "Enter Number 2: "
         }
     ]);
 
@@ -73,8 +73,6 @@ async function askQuestion() {
         console.log(chalk.green(`${answers.num1} / ${answers.num2} = ${answers.num1 / answers.num2}`));
     }
 }
-
-askQuestion();
 
 
 async function startAgain() {
